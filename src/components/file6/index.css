@@ -15,9 +15,12 @@
     min-width: 180px;
     margin-bottom: 20px;
     padding: 10px;
+    margin: 20px;
   }
   .inside {
     margin: 8px;
+    width: 200px;
+   
   }
   .white {
     color: white;
@@ -26,9 +29,12 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    
+    
   }
   .delete1 {
     height: 20px;
+    
   }
   .first {
     border-radius: 55px;
@@ -40,5 +46,9 @@
     font-size: 20px;
     padding-top: 5px;
     border-width: none;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
   }
   

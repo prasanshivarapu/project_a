@@ -68,7 +68,10 @@ const SignupForm = () => {
     <div className="main">
       <h1 className="in">LOGIN</h1>
       <p className="in1">Easily Using</p>
-      <GoogleAuth />
+      <div className="goo">
+        < GoogleAuth />
+      </div>
+      
       <p className="in2">OR Using Account Details</p>
       <form onSubmit={loginTo} className="main1">
         <input
