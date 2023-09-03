@@ -6,17 +6,20 @@ import './index.css'
 const Passwordlist = props => {
   const {happy, todo, run} = props
   const a = '*'
-  const {name, pass, word, id} = happy
+  const {name, pass, word, id} = happy 
+
+  useEffect(() => {
+
+    if (Cookies.get("token") === undefined) {
+      navigate("/");
+    }
+  });
   const btn = () => {
     todo(id)
   }
      const navigate = useNavigate(); 
-  useEffect(() => {
-
-    if (Cookies.get("token") === undefined) {
-      navigate("/fill");
-    }
-  });
+ 
+  console.log(Cookies.get("token"))
   const pep = run ? word : a.repeat(word.length)
   return (
     <div> 
