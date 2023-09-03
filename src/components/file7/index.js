@@ -97,8 +97,11 @@ function Passwordtext() {
   const pwlength = typ.length;
 
   return (
+   
+
+       
     <div className="greet1">
-      <div className='btn'>
+      <div className='btn2 ' >
         <h1>
           My password <br /> saver
         </h1>
@@ -147,7 +150,7 @@ function Passwordtext() {
       </div>
       <div className="greet8">
         <div className="preet2">
-          <p className="para">Your Password {pwlength}</p>
+          <p className="para">No of passwords {pwlength}</p>
           <input
             type="search"
             placeholder="search"
@@ -157,8 +160,8 @@ function Passwordtext() {
         </div>
         <hr />
         <div className="checkbox">
-          <label htmlFor="pass" className="show">
-            {' '}
+          <label htmlFor="pass" className="show ">
+            
             show password
           </label>
           <input
@@ -198,6 +201,7 @@ function Passwordtext() {
         )}
       </div>
     </div>
+    
   );
 }
 

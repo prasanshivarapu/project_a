@@ -19,6 +19,8 @@ const Passwordlist = props => {
   });
   const pep = run ? word : a.repeat(word.length)
   return (
+    <div> 
+     <div>    
     <div className="treet11">
       <div>
         <h1 className="first">{name[0]}</h1>
@@ -36,6 +38,8 @@ const Passwordlist = props => {
           src="https://assets.ccbp.in/frontend/react-js/password-manager-delete-img.png"
         />
       </button>
+    </div>
+    </div>
     </div>
   )
 }
