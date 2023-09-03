@@ -7,6 +7,10 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    padding-top: 25px;
+  }
+  .cloud{
+    min-height: 100px;
   }
   .rent {
     color: white;
@@ -31,7 +35,7 @@
   @media screen and (min-width: 776px) {
     .wel {
       width: 50%;
-      height: 100vh;
+      height: 90vh;
     }
     .para {
       width: 500px;

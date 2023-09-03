@@ -8,6 +8,7 @@ const WelcomePage = () => (
     <p className="para">
     It is   a password management app designed to securely store passwords.
     </p>
+    <img className="cloud" src=" https://res.cloudinary.com/dzleppv07/image/upload/v1693754641/Password-video_1_cge1gy.gif" />
   </div>
 );
 

@@ -93,13 +93,13 @@ const SignupForm = () => {
             {bt}
           </button>
         </div>
-        <div className="box">
+        {/* <div className="box">
           <div className="check">
             <input type="checkbox" />
             <p className="rem">Remember</p>
           </div>
           <p className="for">Forgot Password?</p>
-        </div>
+        </div> */}
         <p className="e">{error}</p>
 
         <ReCAPTCHA
@@ -112,10 +112,10 @@ const SignupForm = () => {
           Login
         </button>
       </form>
-      <p>New to RentalApp?</p>
+      {/* <p>New to RentalApp?</p>
       <button className="button2" type="button" onClick={register}>
         Register
-      </button>
+      </button> */}
     </div>
   );
 };

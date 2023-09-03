@@ -6,10 +6,11 @@
     background-color: white;
     border: solid;
     min-width: 200px;
-  
+    padding-top: 25px;
     margin: 10px;
     border-color: rgb(245, 242, 242);
     border-radius: 5px;
+    height: 90vh;
   }
   .goo{
     cursor: pointer;
@@ -22,6 +23,8 @@
   }
   .in2 {
     color: rgb(112, 107, 107);
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .e {
     color: red;
@@ -44,6 +47,7 @@
     font-weight: 500;
     font-size: 18px;
     margin-left: 5px;
+    margin-top: 10px;
   }
   .main1 {
     display: flex;
@@ -51,6 +55,9 @@
   }
   .check {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
   }
   .box {
     display: flex;
@@ -109,6 +116,7 @@
     min-width: 300px;
     height: 35px;
     background-color: aqua;
+    margin-top: 20px;
   }
   @media screen and (min-width: 776px) {
     .main {
