@@ -31,5 +31,16 @@
     margin-top: 10px;
     border-color: transparent;
     cursor: pointer;
+    margin-right: 20px;
+  }
+  .regbtn1 {
+    width: 105px;
+    background-color: rgb(123, 123, 207);
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    margin-top: 10px;
+    border-color: transparent;
+    cursor: pointer;
   }
   
