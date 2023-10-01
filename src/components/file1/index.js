@@ -45,7 +45,7 @@ const SignupForm = () => {
 
     console.log(existingData)
     existingData.map(function(each){
-      if((each.email===input1 && each.password===password1&&captchaValue !== "")||(input1 === "prasan" && password1 === "prasan" && captchaValue !== "")) {
+      if((each.email===input1 && each.password===password1&&captchaValue !== "")) {
         Cookies.set("token", 1234, { expires: 30 });
         setError("");
         navigate("/fill");
@@ -62,20 +62,20 @@ const SignupForm = () => {
 
 
 
-    // if (input1 === "prasan" && password1 === "prasan" && captchaValue !== "") {
-    //   Cookies.set("token", 1234, { expires: 30 });
-    //   console.log(Cookies.get("token") === undefined);
-    //   setError("");
-    //   navigate("/fill");
-    // } else {
-    //   if (input1 !== "prasan" || password1 !== "prasan") {
-    //     setError("Username and password not matched");
-    //   } else if (captchaValue === "") {
-    //     setError("Please verify the captcha");
-    //   } else {
-    //     setError("");
-    //   }
-    // }
+    if (input1 === "prasan" && password1 === "prasan" && captchaValue !== "") {
+      Cookies.set("token", 1234, { expires: 30 });
+      console.log(Cookies.get("token") === undefined);
+      setError("");
+      navigate("/fill");
+    } else {
+      if (input1 !== "prasan" || password1 !== "prasan") {
+        setError("Username and password not matched");
+      } else if (captchaValue === "") {
+        setError("Please verify the captcha");
+      } else {
+        setError("");
+      }
+    }
   };
   useEffect(() => {
     if (Cookies.get("token") !== undefined) {
